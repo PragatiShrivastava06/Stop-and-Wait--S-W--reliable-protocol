@@ -1,0 +1,22 @@
+SFTP: Reliable Transfer over a Reliable Channel
+Step 1:
+ There are two classes: a)sftp_client.c b)sftp_server.c
+ sftp_client.c will first create a File object from the input file location
+ Make sure that you change the file path accordingly to point to the location of your specific input file.
+Step 2:
+ The input file can be a text file or an image file.
+ The sftp_client.c class is responsible for reading the bytes of data from the input file and send the data in chunks
+of bytes to the Server side.
+Step 3:
+ The sftp_server.c class will then check for the incoming packet of data, break the incoming chunks of data
+(10 bytes) into updated chunks (5 bytes).
+ The sftp_server.c class will then write the data to the output file.
+
+Execution Steps:
+1) Make sure that you have the input file (text file/image file) ready.
+2) Correctly specify the name of the output file with full path (text file/image file).
+3) Specify the correct path of the input file in the sftp_client.c class
+4) Compile both the classes first.
+5) Firstly execute the following class: sftp_server.c
+6) Secondly execute the class sftp_client.c
+7)Check the contents of the output file.
