@@ -1,4 +1,4 @@
-•Tools and technologies used: Java, socket programming for UDP, Eclipse IDE.
+•Tools and technologies used: C, socket programming for UDP.
 
 •This project deals with loss of messages. The E_S&G consists of a client and a server. Communication is unidirectional, i.e., data flows from the client to the server.
 
