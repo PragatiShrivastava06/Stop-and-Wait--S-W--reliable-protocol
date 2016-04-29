@@ -1,0 +1,21 @@
+# Stop-and-Wait--S-W--reliable-protocol
+
+Reliable Transfer over an Unreliable Channel that can also loose Packets 
+Step 1: 
+• There are two classes: 
+a) stop-wait_client.c 
+b) stop-wait_server .c
+• stop-wait_client.c will first create a File object from the input file location 
+• Make sure that you change the file path accordingly to point to the location of your specific input file. 
+Step 2: 
+• The input file can be a text file or an image file. 
+• The stop-wait_client.c class is responsible for reading the bytes of data from the input file and send the data in chunks of bytes to the Server side. 
+Step 3: 
+• The stop-wait_server .c class will then check for the incoming packet of data, calculate checksum and send the specific acknowledgements back to the client side for verification. 
+
+Program Execution Steps: 
+1) Make sure that you have the input file (text file/image file) ready.
+ 2) Specify the correct path of the input file in the stop-wait_client.c class 
+3) Compile both the classes first.
+4) Firstly execute the following class: stop-wait_server .c
+5) Secondly execute the class stop-wait_client.c
